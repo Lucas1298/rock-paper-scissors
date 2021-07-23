@@ -9,6 +9,8 @@ $border-color-scissor: #db1010;
     border: solid 20px $color;
     text-align: center;
     position: relative;
+    margin: 0;
+    display: inline-block;
 }
 
 @mixin alignText {
@@ -23,9 +25,9 @@ $border-color-scissor: #db1010;
     }
 }
 
-.border-below {
-    @include circleColor(#00000054);
-    bottom: -10px;
+.circle-option {
+    display: inline-block;
+    margin: 20px;
 }
 .icon {
     @include alignText;
@@ -33,18 +35,12 @@ $border-color-scissor: #db1010;
 
 .border-rock {
     @include circleColor(#db1010);
-    top: -20px;
-    left: -20px;    
 }
 
 .border-paper {
     @include circleColor(#0b32de);
-    top: -20px;
-    left: -20px;
 }
 
 .border-scissor {
     @include circleColor(#f2d70c);
-    top: -20px;
-    left: -20px;
 }

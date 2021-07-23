@@ -1,0 +1,11 @@
+.select {
+    display: inline-block;
+    &:hover {
+        transform: scale(1.25)
+    }
+    &.off{
+        visibility: hidden;
+    }
+}
+
+    
