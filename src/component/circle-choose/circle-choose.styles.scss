@@ -1,0 +1,50 @@
+$border-color-rock: #0b32de;
+$border-color-paper: #f2d70c;
+$border-color-scissor: #db1010;
+
+@mixin circleColor($color) {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid 20px $color;
+    text-align: center;
+    position: relative;
+}
+
+@mixin alignText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 50%;
+    text-align: center;
+    img {
+        width: 50px;
+    }
+}
+
+.border-below {
+    @include circleColor(#00000054);
+    bottom: -10px;
+}
+.icon {
+    @include alignText;
+}
+
+.border-rock {
+    @include circleColor(#db1010);
+    top: -20px;
+    left: -20px;    
+}
+
+.border-paper {
+    @include circleColor(#0b32de);
+    top: -20px;
+    left: -20px;
+}
+
+.border-scissor {
+    @include circleColor(#f2d70c);
+    top: -20px;
+    left: -20px;
+}
